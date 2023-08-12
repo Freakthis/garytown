@@ -18,7 +18,8 @@ Write-Output "Not in TS"
 
 $Manufacturer = (Get-WmiObject -Class:Win32_ComputerSystem).Manufacturer
 $Model = (Get-WmiObject -Class:Win32_ComputerSystem).Model
-$CompanyName = "GARYTOWN"
+$tsenv.value('CompanyName')
+#$CompanyName = "GARYTOWN"
 
 if ($Manufacturer -match "Lenovo")
     {
