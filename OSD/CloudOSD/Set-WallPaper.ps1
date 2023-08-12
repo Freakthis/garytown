@@ -179,7 +179,7 @@ foreach ($filechild in $files)
 
 
 #Download WallPaper from GitHub
-$WallPaperURL = "https://github.com/gwblok/garytown/raw/master/OSD/CloudOSD/wallpaper.jpg"
+$WallPaperURL = "https://github.com/Freakthis/garytown/raw/master/OSD/CloudOSD/VDL_Wallpaper.jpg"
 Invoke-WebRequest -UseBasicParsing -Uri $WallPaperURL -OutFile "$env:TEMP\wallpaper.jpg"
 
 #Copy the 2 files into place
